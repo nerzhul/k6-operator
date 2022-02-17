@@ -356,6 +356,7 @@ func TestNewRunnerJobNoisy(t *testing.T) {
 				Spec: corev1.PodSpec{
 					Hostname:                     "test-1",
 					RestartPolicy:                corev1.RestartPolicyNever,
+					SecurityContext:              &corev1.PodSecurityContext{},
 					Affinity:                     nil,
 					NodeSelector:                 nil,
 					ServiceAccountName:           "default",
@@ -451,6 +452,7 @@ func TestNewRunnerJobUnpaused(t *testing.T) {
 				Spec: corev1.PodSpec{
 					Hostname:                     "test-1",
 					RestartPolicy:                corev1.RestartPolicyNever,
+					SecurityContext:              &corev1.PodSecurityContext{},
 					Affinity:                     nil,
 					NodeSelector:                 nil,
 					ServiceAccountName:           "default",
@@ -546,6 +548,7 @@ func TestNewRunnerJobArguments(t *testing.T) {
 				Spec: corev1.PodSpec{
 					Hostname:                     "test-1",
 					RestartPolicy:                corev1.RestartPolicyNever,
+					SecurityContext:              &corev1.PodSecurityContext{},
 					Affinity:                     nil,
 					NodeSelector:                 nil,
 					ServiceAccountName:           "default",
@@ -642,6 +645,7 @@ func TestNewRunnerJobServiceAccount(t *testing.T) {
 				Spec: corev1.PodSpec{
 					Hostname:                     "test-1",
 					RestartPolicy:                corev1.RestartPolicyNever,
+					SecurityContext:              &corev1.PodSecurityContext{},
 					Affinity:                     nil,
 					NodeSelector:                 nil,
 					ServiceAccountName:           "test",
@@ -739,6 +743,7 @@ func TestNewRunnerJobIstio(t *testing.T) {
 				Spec: corev1.PodSpec{
 					Hostname:                     "test-1",
 					RestartPolicy:                corev1.RestartPolicyNever,
+					SecurityContext:              &corev1.PodSecurityContext{},
 					Affinity:                     nil,
 					NodeSelector:                 nil,
 					ServiceAccountName:           "default",
